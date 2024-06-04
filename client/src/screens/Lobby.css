@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    margin-top: 4rem;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.room{
+    display: inline-block;
+}
+.createRoomTag{
+    font-size: 5rem;
+    letter-spacing: 6px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s,
+    cursor .4s steps-end infinite alternate;
+}
+
+/*Cursor blinking*/
+@keyframes cursor {
+    50%{border-color: transparent;}
+}
+/*typing effect*/
+@keyframes typing {
+    from{width: 0}
+}
+
+.roomNum, .userEmail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    /* flex-direction: row; */
+}
+.roomNum label{
+    /* margin-top: 1rem; */
+    margin-right: .5rem;
+    
+}
+.userEmail label{
+      margin-right: .5rem;
+}
